@@ -4,10 +4,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get '/' do 
+  get '/' do
     "Vegan Breakfast Recipes"
   end
-  
+
   #Index Action
   get '/recipes' do
     @recipe = Recipe.all
